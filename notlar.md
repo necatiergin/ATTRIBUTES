@@ -1,42 +1,34 @@
 _C++11_ standardı ile birlikte C++ diline _"attribute"_ (öznitelik) denilen bir sentaks öğesi eklendi.<br>  
 _Attribute_'lar derleyici programa hitaben yazılan direktiflerdir. (Önişlemci programına değil).
 
-attribute'ların temel amaçları
+_attribute_'ların temel kullanım amaçları
 - derleyinin daha iyi bir kod üretmesine (daha iyi optimizasyon yapmasına) olanak sağlamak.
 - kodlama hatası olabilecek bazı durumlarda derleyiciyi uyarı mesajı vermeye teşvik etmek.
 - kodlama hatası gibi görünebilecek ama bilinçli olarak yazılmış bazı kodlarda derleyicinin uyarı meaajı vermemesini sağlamak.
 - kodun daha anlaşılır olmasını sağlamak
-- Derleyicilerin bazı "implementation defined" durumlarına yönelik açıklama yapmak
+- Derleyicilerin bazı _"implementation defined"_ durumlarına yönelik açıklama yapmak
 
+C dilinde derleyicinin nasıl kod üreteceğine yönelik bazı davranışlarını komut satırı argümanlarıyla ya da #pragma önişlemci komutuyla yardımıyla belirleyebiliriz. 
+_#pragma_ standart bir önişlemci komutu olmasına karşın _pragmalar_ ile neler yapılabileceği derleyicilere bırakılmıştır.
+
+```C
+#pragma pack(1)
+
+struct SAMPLE {
+  char a;
+  short b;
+  int c;
+};
+```
+Örneğin birçok derleyicide bulunan _#pragma pack_ komutu yapı elemanlarının hizalanması (alignment) üzerinde etkili olmaktadır. Ancak birçok pragma komutu ilgili derleyiciye hatta ilgili platforma özgü olabilmektedir. C'de pragma direktifleri önişlemci aşamasında işlenmektedir. Dolayısıyla geniş bir kullanım alanına sahip değildir. _"attribute"_lar bu pragma komutlarının standart ve genel bir biçimi gibi düşünülebilir.
 
 <!---
 
 
 
-C'de derleyicinin kimi davranışları komut satırı argümanlarıyla ya da #pragma direktifi yardımıyla değiştirilebilmektedir. 
-#pragma direktifi C'de standart bir direktif olmasına karşın direktifin	yanındaki komutlar derleyiciden derleyiciye değişebilmektedir.
 
 
-44) C++11 ile birlikte diğer bazı dillerde çeşitli biçimlerde bulunan "öznitelikler (attributes)" konusu dile eklenmiştir. 
-Öznitelikler derleyici için kullanılan direktiflerdir. 
-Özniteliklerin temel amacı derleyicinin daha iyi kod üretmesini sağlamak, uyarı mekanizması üzerinde etkili olmak ve derleyicinin bazı davranışlarını değiştirmektir. 
-C'de derleyicinin kimi davranışları komut satırı argümanlarıyla ya da #pragma direktifi yardımıyla değiştirilebilmektedir. 
-#pragma direktifi C'de standart bir direktif olmasına karşın direktifin	yanındaki komutlar derleyiciden derleyiciye değişebilmektedir. Örneğin:
-
-#pragma pack(1)
-
-struct SAMPLE {
-char a;
-short b;
-int c;
-};
-
-#pragma pack komutu yapı elemanlarının hizalanması üzerinde etkili olmaktadır. 
-Bu pragma komutu pek çok derleyici tarafından desteklenmektedir. 
-Ancak pek çok pragma direktifi ilgili derleyiciye hatta ilgili platforma özgü olabilmektedir.
-C'de pragma direktifleri önişlemci aşamasında parse edilmektedir. 
-Dolayısıyla zayıf bir kullanım alanına sahiptir. 
-İşte öznitelikler bu pragram direktiflerinin standart ve genel bir biçimi gibi düşünülebilir. 
+ 
 
 C++11 ile dile eklenen öznitelikler zaman içerisinde neredeyse tüm sentaktik öğelerde kullanılabilir duruma getirilmiştir. 
 İzleyen paragraflarda tipik olarak bu özniteliklerin hangi sentaktik öğelerde kullanılabileceğinin bir listesini (ayrıntılı olmayan listesini) vereceğiz. 
