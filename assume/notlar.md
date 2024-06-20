@@ -1,5 +1,5 @@
 <!---
-Standat [[assume(ifade)]] özniteliği belli bir noktada belli bir koşulun kesinlikle sağlanması gerektiğini belirtmektedir. 
+Standart [[assume(ifade)]] özniteliği belli bir noktada belli bir koşulun kesinlikle sağlanması gerektiğini belirtmektedir. 
 Bu öznitelik boş deyime uygulanabilir. 
 Yani bu öznitelikten sonra ';' atomunun gelmesi gerekir.
 Eğer söz konusu koşul sağlanmazsa "tanımsız davranış" oluşmaktadır. Örneğin:
