@@ -1,12 +1,17 @@
-<!---
-C++11 standardı ile birlikte C++ diline "attribute" (öznitelik) denilen bir sentaks öğesi eklenmiştir.<br>  
-Öznitelikler derleyici programa hitaben yazılan direktiflerdir. (Önişlemci programına değil)
+_C++11_ standardı ile birlikte C++ diline _"attribute"_ (öznitelik) denilen bir sentaks öğesi eklendi.<br>  
+_Attribute_'lar derleyici programa hitaben yazılan direktiflerdir. (Önişlemci programına değil).
+
 attribute'ların temel amaçları
-- derleyinin daha iyi bir kod üretmesine olanak sağlamak (daha iyi optimizasyon yapmasına)
-- Kodlama hatası olabilecek bazı durumlarda derleyiciyi uyarı mesajı vermeye teşvik etmek
-- Kodlama hatası gibi görünebilecek ama bilinçli olarakj yazılmış bazı kodlarda derleyicinin uyarı meaajıu vermeme sinğ sağlamak
-- Kodu okuyan açısından kodun daha anlaşılır olmasını sağlamao
-Derleyicilerin bazı "implementation defined" durumlarına yönelik açıklama yapmak için
+- derleyinin daha iyi bir kod üretmesine (daha iyi optimizasyon yapmasına) olanak sağlamak.
+- kodlama hatası olabilecek bazı durumlarda derleyiciyi uyarı mesajı vermeye teşvik etmek.
+- kodlama hatası gibi görünebilecek ama bilinçli olarak yazılmış bazı kodlarda derleyicinin uyarı meaajı vermemesini sağlamak.
+- kodun daha anlaşılır olmasını sağlamak
+- Derleyicilerin bazı "implementation defined" durumlarına yönelik açıklama yapmak
+
+
+<!---
+
+
 
 C'de derleyicinin kimi davranışları komut satırı argümanlarıyla ya da #pragma direktifi yardımıyla değiştirilebilmektedir. 
 #pragma direktifi C'de standart bir direktif olmasına karşın direktifin	yanındaki komutlar derleyiciden derleyiciye değişebilmektedir.
