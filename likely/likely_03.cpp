@@ -1,7 +1,7 @@
 
 
 
-<!--
+<!---
 Standart [[likely]] ve [[unlikely]] öznitelikleri deyimlerde ve etiketlerde (labels) kullanılabilmektadır. Bu öznitelik C++20 ile eklenmiştir. Örneğin:
 
 	if (koşul) [[likely]] {
@@ -23,4 +23,4 @@ Standart [[likely]] ve [[unlikely]] öznitelikleri deyimlerde ve etiketlerde (la
 	Burada foo başarısız olduğunda -1 değerine geri dönüyor olsun. Programcı derleyiciye "bu fonksiyonun başarsız olma olasılığı çok düşük" demek istemektedir.
 	Bu bilgiyi elde eden derleyici daha etkin makine komutları üretebilmektedir. 
 
--->
+--->
