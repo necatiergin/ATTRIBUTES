@@ -20,7 +20,7 @@ struct SAMPLE {
   int c;
 };
 ```
-Örneğin birçok derleyicide bulunan _#pragma pack_ komutu yapı elemanlarının hizalanması (alignment) üzerinde etkili olmaktadır. Ancak birçok pragma komutu ilgili derleyiciye hatta ilgili platforma özgü olabilmektedir. C'de pragma direktifleri önişlemci aşamasında işlenmektedir. Dolayısıyla geniş bir kullanım alanına sahip değildir. _"attribute"_lar bu pragma komutlarının standart ve genel bir biçimi gibi düşünülebilir.
+Örneğin birçok derleyicide bulunan _#pragma pack_ komutu yapı elemanlarının hizalanması _(alignment)_ üzerinde etkili olmaktadır. Ancak birçok pragma komutu ilgili derleyiciye hatta ilgili platforma özgü olabilmektedir. C'de pragma direktifleri önişlemci aşamasında işlenmektedir. Dolayısıyla geniş bir kullanım alanına sahip değildir. _attribute_'lar bu _pragma_ komutlarının standart ve genel bir biçimi gibi düşünülebilir.
 
 <!---
 
