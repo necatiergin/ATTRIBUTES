@@ -1,3 +1,5 @@
+// nodiscard attribute since C++17
+
 [[nodiscard]]
 int sum_square(int a, int b)
 {
