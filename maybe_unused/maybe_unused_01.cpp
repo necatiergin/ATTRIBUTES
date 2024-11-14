@@ -1,3 +1,4 @@
+// since C++ 17
 //compiler may generate warning message if func is not called in the translation unit
 static void func()
 {
