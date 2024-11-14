@@ -1,3 +1,4 @@
+// [[fallthrough]] since C++17
 constexpr bool isleap(int y)
 {
 	return y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
