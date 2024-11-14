@@ -1,4 +1,4 @@
-//[[fallthrough]] C++17
+// [[fallthrough]] since C++17
 
 enum Color { White, Blue, Red, Black };
 
