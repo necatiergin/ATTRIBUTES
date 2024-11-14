@@ -1,3 +1,5 @@
+// [[fallthrough] since C++17
+
 #include <iostream>
 
 void commentPlace(int place) 
