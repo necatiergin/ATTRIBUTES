@@ -4,7 +4,7 @@
 [[noreturn]]
 void foo()
 {
-	throw std::runtime_error{ "hata" };
+	throw std::runtime_error{ "error..." };
 }
 
 void func()
@@ -14,7 +14,7 @@ void func()
 		//unreachable code
 	}
 	catch (const std::exception& ex) {
-		std::cout << "hata yakalandi : " << ex.what() << '\n';
+		std::cout << "exception caught : " << ex.what() << '\n';
 		//reachable code
 	}
 }
