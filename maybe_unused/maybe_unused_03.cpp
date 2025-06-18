@@ -7,7 +7,3 @@
     assert(val > 0); 
     
 } 
-
-int main() 
-{
-}
