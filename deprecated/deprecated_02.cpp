@@ -6,15 +6,15 @@ struct [[deprecated]] Data {
 	int x, y, z;
 };
 
+class Nec {
+	int mx;
+	[[deprecated]] int y;
+};
+
 enum Color {
 	White,
 	Gray,
 	Blue,
-	[[deprecated]] Brown,
+	Brown [[deprecated]],
 	Black,
-};
-
-class Nec {
-	int mx;
-	[[deprecated]] int y;
 };
